@@ -1,4 +1,4 @@
-import (useState, useEffect, useCallback) from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export const useGameStatus = rowsCleared => {
   const [score, setScore] = useState(0);
@@ -11,7 +11,7 @@ export const useGameStatus = rowsCleared => {
     //have score
     if(rowsCleared > 0) {
       //original score calculated
-      setScore(prev => prev + linePoints[rowsCleared - 1] * (levels + 1))
+      setScore(prev => prev + linePoints[rowsCleared - 1] * (level + 1))
       setRows(prev => prev + rowsCleared);
     }
   }, [level, linePoints, rowsCleared])
