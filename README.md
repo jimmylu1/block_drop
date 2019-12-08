@@ -3,6 +3,5 @@
 A user friendly and interactive game that tests players to align blocks and clear them to achieve a high score.
 
 ## Set Up
-
-npm install
-npm start
+1. npm install
+2. npm start
